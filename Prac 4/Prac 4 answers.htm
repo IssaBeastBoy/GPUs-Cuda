@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>CS4GPU</title>
+    <link rel="icon" href="//ruconnected.ru.ac.za/pluginfile.php/1/theme_adaptable/favicon/1580136036/ruconnected-logo-favicon.png" />
+
+    <link rel="stylesheet" href="https://ruconnected.ru.ac.za/theme/adaptable/style/font-awesome.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400'
+    rel='stylesheet'
+    type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400'
+    rel='stylesheet'
+    type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Actor:400'
+    rel='stylesheet'
+    type='text/css'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, CS4GPU" />
+<link rel="stylesheet" type="text/css" href="https://ruconnected.ru.ac.za/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://ruconnected.ru.ac.za/theme/styles.php/adaptable/1580136036/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/ruconnected.ru.ac.za","sesskey":"fFoWqUhAqN","loadingicon":"https:\/\/ruconnected.ru.ac.za\/theme\/image.php\/adaptable\/core\/1580136036\/i\/loading_small","themerev":"1580136036","slasharguments":1,"theme":"adaptable","jsrev":"1567674304","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":false,"base":"https:\/\/ruconnected.ru.ac.za\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/ruconnected.ru.ac.za\/theme\/yui_combo.php?","combine":false,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/ruconnected.ru.ac.za\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/ruconnected.ru.ac.za\/theme\/yui_combo.php?","combine":false,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/ruconnected.ru.ac.za\/theme\/yui_combo.php?m\/1567674304\/","combine":false,"comboBase":"https:\/\/ruconnected.ru.ac.za\/theme\/yui_combo.php?","ext":false,"root":"m\/1567674304\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-core_message-messenger":{"requires":["escape","handlebars","io-base","moodle-core-notification-ajaxexception","moodle-core-notification-alert","moodle-core-notification-dialogue","moodle-core-notification-exception"]},"moodle-core_message-deletemessage":{"requires":["node","event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/ruconnected.ru.ac.za\/lib\/yuilib\/gallery\/","combine":false,"comboBase":"https:\/\/ruconnected.ru.ac.za\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1567674304\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/ruconnected.ru.ac.za\/lib\/javascript.php\/1567674304\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/ruconnected.ru.ac.za\/lib\/javascript.php\/1567674304\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.6.1\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-enrol-index" class="format-topics  path-enrol safari dir-ltr lang-en yui-skin-sam yui3-skin-sam ruconnected-ru-ac-za pagelayout-incourse course-5059 context-305132 category-228 notloggedin two-column  has-region-side-post used-region-side-post side-post-only">
+
+<div class="skiplinks"><a class="skip" href="#maincontent">Skip to main content</a></div>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/yui_combo.php?rollup/1567674304/mcore-min.js"></script><script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/jquery.php/core/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/jquery.php/theme_adaptable/pace-min.js"></script>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/jquery.php/theme_adaptable/jquery-flexslider-min.js"></script>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/jquery.php/theme_adaptable/tickerme.js"></script>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/jquery.php/theme_adaptable/jquery-easing-min.js"></script>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/jquery.php/theme_adaptable/adaptable.js"></script>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/lib/javascript.php/1567674304/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+<div id="page" class="container-fluid fullin showblockicons">
+
+<div class="customalert alert alert-dismissable adaptable-alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close" data-alertkey="RUconnected Mobile App" data-alertindex="1">
+                    <span aria-hidden="true">&times;</span></button><i class="fa fa-bullhorn fa-lg"></i>&nbsp;<p><b>Download the RUconnected Mobile App for Android <a href="https://play.google.com/store/apps/details?id=com.moodle.ruconnected">here</a>. Apple App coming soon!</b></p>
+         </div><div class="customalert alert alert-dismissable adaptable-alert-info fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close" data-alertkey="RU Institutional Culture Research" data-alertindex="2">
+                    <span aria-hidden="true">&times;</span></button><i class="fa fa-info-circle fa-lg"></i>&nbsp;<p>Call for participation: Focus group on RU academic project - info &amp; sign up&nbsp;<a href="https://docs.google.com/forms/d/e/1FAIpQLScka8qlQ5wR-Bx6glMA-v72puNuos3vqfuVQ5tmycdM0HvNYg/viewform" target="_blank">here</a>. There will be pizza:)</p></div>
+    <header id="page-header-wrapper">
+    <div id="above-header">
+        <div class="clearfix container userhead">
+            <div class="pull-left">
+                <ul class="usermenu2 nav navbar-nav navbar-right"></ul>            </div>
+
+            <div class="headermenu row">
+        <form action="https://ruconnected.ru.ac.za/login/index.php" method="post">
+            <button class="btn-login" type="submit">
+                Log In            </button>
+        </form>
+</div>
+
+<div style="float: right; position: relative; display: inline; margin-left: 15px; height:20px;">
+<ul class="nav navbar-nav"><li class="dropdown langmenu"><a href="https://ruconnected.ru.ac.za/my/index.php" class="dropdown-toggle" data-toggle="dropdown" title="Language"><i class="fa fa-globe fa-lg"></i><span class="langdesc">English ‎(en)‎</span></a><ul class="dropdown-menu"><li><a title="Afrikaans ‎(af)‎" href="https://ruconnected.ru.ac.za/enrol/index.php?id=5059&amp;lang=af">Afrikaans ‎(af)‎</a></li><li><a title="English ‎(en)‎" href="https://ruconnected.ru.ac.za/enrol/index.php?id=5059&amp;lang=en">English ‎(en)‎</a></li><li><a title="Français ‎(fr)‎" href="https://ruconnected.ru.ac.za/enrol/index.php?id=5059&amp;lang=fr">Français ‎(fr)‎</a></li></ul></ul></div>
+
+    </div>
+</div>
+
+
+
+<div id="page-header" class="clearfix container">
+
+<div id="logocontainer"><a href='https://ruconnected.ru.ac.za'><img src=//ruconnected.ru.ac.za/pluginfile.php/1/theme_adaptable/logo/1580136036/ruconnected-logo.png alt="logo" id="logo" /></a></div><div id="logocontainer" class="logoright"><a href='https://ruconnected.ru.ac.za'><img src=//ruconnected.ru.ac.za/pluginfile.php/1/theme_adaptable/logoright/1580136036/ru-logo.png alt="logoright" id="logoright" /></a></div><div id="sitetitle"></div>
+
+
+        <div class="searchbox">
+            <form action="https://ruconnected.ru.ac.za/course/search.php">
+                <label class="hidden" for="search-1" style="display: none;">Search iCity</label>
+                <div class="search-box grey-box bg-white clear-fix">
+                    <input placeholder="Search courses"
+                                        accesskey="6"
+                                        class="search_tour bg-white no-border left search-box__input ui-autocomplete-input"
+                                        type="text"
+                                        name="search"
+                                        id="search-1"
+                                        autocomplete="off">
+                    <button type="submit" class="no-border bg-white pas search-box__button">
+                        <abbr class="fa fa-search"></abbr>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="course-header">
+                    </div>
+    </div>
+
+</header>
+
+
+<div class="container outercont">
+    <div id="page-content" class="row-fluid">
+        <div id="page-navbar" class="span12"><ul class="breadcrumb"><i class="fa fa-folder-open-o fa-lg"></i><span class="separator"><i class="fa-angle-right fa"></i>
+                             </span><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://ruconnected.ru.ac.za/course/index.php"><span itemprop="title">Courses</span></a></span></li><span class="separator"><i class="fa-angle-right fa"></i>
+                             </span><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://ruconnected.ru.ac.za/course/index.php?categoryid=36"><span itemprop="title">Computer Science</span></a></span></li><span class="separator"><i class="fa-angle-right fa"></i>
+                             </span><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://ruconnected.ru.ac.za/course/index.php?categoryid=228"><span itemprop="title">CS Honours</span></a></span></li><span class="separator"><i class="fa-angle-right fa"></i>
+                             </span><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Programming on GPUs" href="https://ruconnected.ru.ac.za/course/view.php?id=5059"><span itemprop="title">CS4GPU</span></a></span></li><span class="separator"><i class="fa-angle-right fa"></i>
+                             </span><li><span tabindex="0">Enrolment options</span></li></ul></div>
+        <section id="region-main" class="span9 desktop-first-column">
+            <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><h2>Enrolment options</h2><div class="box generalbox info"><div class="coursebox clearfix" data-courseid="5059" data-type="1"><div class="info"><h3 class="coursename"><a class="" href="https://ruconnected.ru.ac.za/course/view.php?id=5059">Programming on GPUs</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><div class="no-overflow"><p>Honours course that covers CUDA and OpenACC programming on NVidia GPUs</p></div></div><ul class="teachers"><li>Lecturer: <a href="https://ruconnected.ru.ac.za/user/view.php?id=5710&amp;course=1">Karen Bradshaw</a></li></ul></div></div></div><div class="box generalbox">
+<form autocomplete="off" action="https://ruconnected.ru.ac.za/login/index.php" method="post" accept-charset="utf-8" id="mform1" class="mform">
+	<div style="display: none;"><div class="hide"><input type="text" class="ignoredirty" /><input type="password" class="ignoredirty" /></div><input name="sesskey" type="hidden" value="fFoWqUhAqN" />
+<input name="_qf__enrol_self_empty_form" type="hidden" value="1" />
+<input name="mform_isexpanded_id_selfheader" type="hidden" value="1" />
+</div>
+
+
+	<fieldset class="clearfix collapsible"  id="id_selfheader">
+		<legend class="ftoggler">Self enrolment (Student)</legend>
+		<div class="fcontainer clearfix">
+		
+		<div id="fitem_id_info" class="fitem femptylabel "><div class="fitemtitle"><div class="fstaticlabel"> </div></div><div class="felement fstatic">Guests cannot access this course. Please log in.<div class="continuebutton"><form method="get" action="https://ruconnected.ru.ac.za/login/index.php"><div><input type="submit" value="Continue" /></div></form></div></div></div>
+		</div></fieldset>
+</form></div></div>        </section>
+
+        <aside id="block-region-side-post" class="span3 block-region" data-blockregion="side-post" data-droptarget="1"><a class="skip skip-block" id="fsb-2" href="#sb-2">Skip Surveys</a><div id="inst128669" class="block_html  block" role="complementary" data-block="html" data-instanceid="128669" aria-labelledby="instance-128669-header" data-dockable="1"><div class="header"><div class="title"><div class="block_action"></div><h2 id="instance-128669-header">Surveys</h2></div></div><div class="content"><div class="no-overflow"><p>TBA</p></div></div></div><span class="skip-block-to" id="sb-2"></span><a class="skip skip-block" id="fsb-3" href="#sb-3">Skip Navigation</a><div id="inst49736" class="block_navigation  block" role="navigation" data-block="navigation" data-instanceid="49736" aria-labelledby="instance-49736-header" data-dockable="1"><div class="header"><div class="title"><div class="block_action"></div><h2 id="instance-49736-header">Navigation</h2></div></div><div class="content"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" aria-labelledby="label_1_1"><p class="tree_item branch canexpand navigation_node" role="treeitem" aria-expanded="true" aria-owns="random5e4ade7221a732_group" data-collapsible="false"><a tabindex="-1" id="label_1_1" href="https://ruconnected.ru.ac.za/">Home</a></p><ul id="random5e4ade7221a732_group" role="group"><li class="type_course depth_2 contains_branch" aria-labelledby="label_2_2"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random5e4ade7221a733_group"><span tabindex="-1" id="label_2_2" title="RUconnected">Site pages</span></p><ul id="random5e4ade7221a733_group" role="group" aria-hidden="true"><li class="type_setting depth_3 item_with_icon" aria-labelledby="label_3_4"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_4" href="https://ruconnected.ru.ac.za/tag/search.php"><img class="smallicon navicon" alt="" src="https://ruconnected.ru.ac.za/theme/image.php/adaptable/core/1580136036/i/navigationitem" /><span class="item-content-wrap">Tags</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_5"><p class="tree_item hasicon" role="treeitem"><a tabindex="-1" id="label_3_5" href="https://ruconnected.ru.ac.za/calendar/view.php?view=month"><img class="smallicon navicon" alt="" src="https://ruconnected.ru.ac.za/theme/image.php/adaptable/core/1580136036/i/navigationitem" /><span class="item-content-wrap">Calendar</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_17"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random5e4ade7221a736_group"><span tabindex="-1" id="label_2_17">Current course</span></p><ul id="random5e4ade7221a736_group" role="group"><li class="type_course depth_3 item_with_icon current_branch" aria-labelledby="label_3_18"><p class="tree_item hasicon active_tree_node" role="treeitem"><a tabindex="-1" id="label_3_18" title="Programming on GPUs" href="https://ruconnected.ru.ac.za/course/view.php?id=5059"><img class="smallicon navicon" alt="" src="https://ruconnected.ru.ac.za/theme/image.php/adaptable/core/1580136036/i/navigationitem" /><span class="item-content-wrap">CS4GPU</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_19"><p class="tree_item branch" role="treeitem" id="expandable_branch_0_courses" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_0_courses" data-node-key="courses" data-node-type="0"><a tabindex="-1" id="label_2_19" href="https://ruconnected.ru.ac.za/course/index.php">Courses</a></p></li></ul></li></ul></div></div><span class="skip-block-to" id="sb-3"></span></aside>    </div>
+</div>
+
+
+<footer id="page-footer">
+
+<div id="course-footer"></div>
+                <div class="poweredby">
+                <img class="footerlogo" src="https://ruconnected.ru.ac.za/theme/image.php/adaptable/theme/1580136036/moodle-sm"/>
+                <div class="homelink"><a href="https://ruconnected.ru.ac.za/course/view.php?id=5059">CS4GPU</a></div><div id="customfotter">Powered by <a href="http://www.enovation.ie" target="_blank">Enovation</a></div></div>
+                <div class="container blockplace1"><div class="row-fluid"><div class="left-col span3"><p>RUconnected Guides</p>
+         </div><div class="left-col span6"><p style="text-align:center;">Email: <a>edtech@ru.ac.za</a></p>
+         </div><div class="left-col span3"><p>Tel: 046 603 7097 (08h30 to 16h30)</p></div></div></div>        <div class="container">
+            <div class="row-fluid">
+                <div class="span12 pagination-centered">
+<div class="socialbox"><a target="_self" title="Twitter" href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a></div>                </div>
+            </div>
+        </div>
+
+    <div class="info container2 clearfix">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span4">
+                         </div>
+
+                <div class="span4 helplink">
+                </div>
+                <div class="span4">
+                                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<a class="back-to-top" href="#top" ><i class="fa fa-angle-up "></i></a>
+    <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://ruconnected.ru.ac.za/lib/requirejs.php/1567674304/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://ruconnected.ru.ac.za/lib/javascript.php/1567674304/lib/jquery/jquery-1.12.1.min',
+        jqueryui: 'https://ruconnected.ru.ac.za/lib/javascript.php/1567674304/lib/jquery/ui-1.11.4/jquery-ui.min',
+        jqueryprivate: 'https://ruconnected.ru.ac.za/lib/javascript.php/1567674304/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/lib/javascript.php/1567674304/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["theme_adaptable/bsoptions"], function(amd) { amd.init(false); });;
+require(["block_navigation/navblock"], function(amd) { amd.init("49736"); });;
+require(["block_settings/settingsblock"], function(amd) { amd.init("49737", null); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="https://ruconnected.ru.ac.za/theme/javascript.php/adaptable/1580136036/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","ok":"OK","viewallcourses":"View all courses","morehelp":"More help","loadinghelp":"Loading...","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"block":{"addtodock":"Move this to the dock","undockitem":"Undock this item","dockblock":"Dock {$a} block","undockblock":"Undock {$a} block","undockall":"Undock all","hidedockpanel":"Hide the dock panel","hidepanel":"Hide panel"},"langconfig":{"thisdirectionvertical":"btt"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+Y.use("moodle-core-dock-loader",function() {M.core.dock.loader.initLoader();
+});
+Y.use("moodle-core-formchangechecker",function() {M.core_formchangechecker.init({"formid":"mform1"});
+});
+Y.use("moodle-form-shortforms",function() {M.form.shortforms({"formid":"mform1"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\n\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://ruconnected.ru.ac.za/mod/url/view.php?id=132349&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_skiplink(Y);
+M.util.init_block_hider(Y, {"id":"inst128669","title":"Surveys","preference":"block128669hidden","tooltipVisible":"Hide Surveys block","tooltipHidden":"Show Surveys block"});
+M.util.init_block_hider(Y, {"id":"inst49736","title":"Navigation","preference":"block49736hidden","tooltipVisible":"Hide Navigation block","tooltipHidden":"Show Navigation block"});
+ M.util.js_pending('random5e4ade7221a7312'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5e4ade7221a7312'); });
+})();
+//]]>
+</script>
+
+</div>
+</body>
+</html>
